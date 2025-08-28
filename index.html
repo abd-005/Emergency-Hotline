@@ -17,10 +17,10 @@
     <!-- Font Awesome CDN -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="hind">
+<body>
     <!-- Header Section Started -->
-    <header class="py-5 w-11/12 mx-auto flex justify-between items-center">
-      <div class="logo flex justify-start items-center">
+    <header class="py-5 w-11/12 mx-auto min-[884px]:flex min-[884px]:flex-row justify-between items-center">
+      <div class="logo flex justify-center items-center min-[884px]:justify-start mb-5 min-[884px]:mb-0">
         <img src="./assets/logo.png" alt="" class="w-12" />
         <div class="">
           <h2 class="text-emerald-800 text-xl font-bold ml-5">
@@ -28,20 +28,20 @@
           </h2>
         </div>
       </div>
-      <div class="flex justify-between items-center gap-5">
-        <div id="total-heart">
+      <div class="flex min-[884px]:justify-between justify-evenly items-center gap-5">
+        <div>
             <p class="bg-green-100 flex justify-between items-center text-center px-7 py-3 rounded-full">
-            <span class="font-bold">0</span>
+            <span id="total-heart" class="font-bold">0</span>
             <img src="./assets/heart.png" alt="" class="w-6 ml-2">
         </p>
     </div>
-        <div id="total-coin">
+        <div>
             <p class="bg-green-100 flex justify-between items-center text-center px-5 py-3 rounded-full ">
-                <span class="font-bold">100</span>
+                <span id="total-coin" class="font-bold">100</span>
                 <img src="./assets/coin.png" alt="" class="w-6 ml-2">
             </p>
         </div>
-        <div id="total-copy"><p class="bg-green-600 text-white px-7 py-2.5 rounded-full font-semibold"><span>0</span> Copy</p></div>
+        <div><p class="bg-green-600 text-white px-8 py-3 rounded-full font-semibold"><span id="total-copy">0</span> Copy</p></div>
       </div>
     </header>
     <!-- Main Section Started -->
@@ -51,17 +51,18 @@
 
  to-emerald-950 flex flex-col justify-center items-center py-5">
             <img src="./assets/logo-dark.png" alt="" class="w-18">
-            <h2 class="text-white font-bold text-2xl my-4">Emergency Service Directory</h2>
-            <p class="text-white">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
+            <h2 class="text-white font-bold text-2xl my-4 text-center">Emergency Service Directory</h2>
+            <p class="text-white text-center mx-10">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
         </section>
         <!-- Contact Section -->
          <section class="bg-green-50 min-w-16 min-h-56 py-12">
             <!-- Contact Container -->
             <section class="contact-container mx-auto w-11/12 grid grid-cols-12 gap-5">
-                    <section id="contact-box" class="item-caontainer col-span-9">
-                        <div id="items-box" class="grid grid-cols-3 gap-5">
-                            <!-- Contact Card 1 -->
-                            <div id="" class="card bg-white shadow-lg">
+              <!-- Card Container -->
+                    <section id="contact-box" class="item-caontainer col-span-8 min-[884px]:col-span-9">
+                        <div id="items-box" class="grid grid-cols-1 min-[884px]:grid-cols-3 gap-5 ">
+              <!-- Contact Card 1 -->
+                            <div id="" class="card bg-white shadow-sm">
                 <div class="icon-container flex justify-between items-center px-5">
                     <figure class="my-5 p-2 rounded-2xl bg-pink-200">
                   <img
@@ -70,7 +71,7 @@
                     class="rounded-xl w-8"
                   /> 
                 </figure>
-                <div><i class="fa-regular fa-heart text-xl"></i></div>
+                <div><i class="fa-regular fa-heart text-xl hover:text-green-600"></i></div>
                 </div>
                 <div class="card-body items-left">
                   <h2 id="" class="card-title text-2xl font-bold">
@@ -80,136 +81,133 @@
                     <span id="">National Emergency
                   </p>
 
-                  <p class="text-2xl font-bold mt-3">999<br>
+                  <p class="text-2xl font-bold mt-3"><span class="call-number">999</span><br>
                     <span class="text-xs font-normal bg-gray-200 px-4 py-1 rounded-4xl">All</span>    
                 </p>
                   <div class="my-3 grid grid-cols-2 gap-1 justify-between items-center">
                   <button
-                    class="btn bg-white text-gray-500 rounded-lg cart-btn"
+                    class="btn bg-white text-gray-500 rounded-lg copy-btn hover:bg-black hover:text-white"
                   >
                    <i class="fa-regular fa-copy"></i> Copy
                   </button>
                   <button
-                    class="btn bg-green-700 text-white rounded-lg cart-btn"
+                    class="btn bg-green-600 hover:bg-green-500 text-white rounded-lg call-btn"
                   >
-                    Add to Cart
+                    <i class="fa-solid fa-phone"></i> Call
                   </button>
                 </div>
                 </div>    
               </div> 
               <!-- Contact Card 2 -->
-                            <div id="" class="card bg-white shadow-lg">
+                            <div id="" class="card bg-white shadow-sm">
                 <div class="icon-container flex justify-between items-center px-5">
                     <figure class="my-5 p-2 rounded-2xl bg-pink-200">
                   <img
-                    src="./assets/emergency.png"
+                    src="./assets/police.png"
                     alt="Shoes"
                     class="rounded-xl w-8"
                   /> 
                 </figure>
-                <div><i class="fa-regular fa-heart text-xl"></i></div>
+                <div><i class="fa-regular fa-heart text-xl hover:text-green-600"></i></div>
                 </div>
                 <div class="card-body items-left">
                   <h2 id="" class="card-title text-2xl font-bold">
-                    National Emergency Number
+                    Police Helpline Number
                   </h2>
                   <p class="text-gray-500">
-                    <span id="">National Emergency
+                    <span id="">Police
                   </p>
-
-                  <p class="text-2xl font-bold mt-3">999<br>
-                    <span class="text-xs font-normal bg-gray-200 px-4 py-1 rounded-4xl">All</span>    
+                  <p class="text-2xl font-bold mt-3"><span class="call-number">999</span><br>
+                    <span class="text-xs font-normal bg-gray-200 px-4 py-1 rounded-4xl">Police</span>    
                 </p>
                   <div class="my-3 grid grid-cols-2 gap-1 justify-between items-center">
                   <button
-                    class="btn bg-white text-gray-500 rounded-lg cart-btn"
+                    class="btn bg-white text-gray-500 rounded-lg copy-btn hover:bg-black hover:text-white"
                   >
                    <i class="fa-regular fa-copy"></i> Copy
                   </button>
                   <button
-                    class="btn bg-green-700 text-white rounded-lg cart-btn"
+                    class="btn bg-green-600 hover:bg-green-500 text-white rounded-lg call-btn"
                   >
-                    Add to Cart
+                    <i class="fa-solid fa-phone"></i> Call
                   </button>
                 </div>
                 </div>    
               </div> 
               <!-- Contact Card 3 -->
-                            <div id="" class="card bg-white shadow-lg">
+                            <div id="" class="card bg-white shadow-sm">
                 <div class="icon-container flex justify-between items-center px-5">
                     <figure class="my-5 p-2 rounded-2xl bg-pink-200">
                   <img
-                    src="./assets/emergency.png"
+                    src="./assets/fire-service.png"
                     alt="Shoes"
                     class="rounded-xl w-8"
                   /> 
                 </figure>
-                <div><i class="fa-regular fa-heart text-xl"></i></div>
+                <div><i class="fa-regular fa-heart text-xl hover:text-green-600"></i></div>
                 </div>
                 <div class="card-body items-left">
                   <h2 id="" class="card-title text-2xl font-bold">
-                    National Emergency Number
+                    Fire Service Number
                   </h2>
                   <p class="text-gray-500">
-                    <span id="">National Emergency
+                    <span id="">Fire Service
                   </p>
-
-                  <p class="text-2xl font-bold mt-3">999<br>
-                    <span class="text-xs font-normal bg-gray-200 px-4 py-1 rounded-4xl">All</span>    
+                  <p class="text-2xl font-bold mt-3"><span class="call-number">999</span><br>
+                    <span class="text-xs font-normal bg-gray-200 px-4 py-1 rounded-4xl">Fire</span>    
                 </p>
                   <div class="my-3 grid grid-cols-2 gap-1 justify-between items-center">
                   <button
-                    class="btn bg-white text-gray-500 rounded-lg cart-btn"
+                    class="btn bg-white text-gray-500 rounded-lg copy-btn hover:bg-black hover:text-white"
                   >
                    <i class="fa-regular fa-copy"></i> Copy
                   </button>
                   <button
-                    class="btn bg-green-700 text-white rounded-lg cart-btn"
+                    class="btn bg-green-600 hover:bg-green-500 text-white rounded-lg call-btn"
                   >
-                    Add to Cart
+                    <i class="fa-solid fa-phone"></i> Call
                   </button>
                 </div>
                 </div>    
               </div> 
               <!-- Contact Card 4 -->
-                            <div id="" class="card bg-white shadow-lg">
+                            <div id="" class="card bg-white shadow-sm">
                 <div class="icon-container flex justify-between items-center px-5">
                     <figure class="my-5 p-2 rounded-2xl bg-pink-200">
                   <img
-                    src="./assets/emergency.png"
+                    src="./assets/ambulance.png"
                     alt="Shoes"
                     class="rounded-xl w-8"
                   /> 
                 </figure>
-                <div><i class="fa-regular fa-heart text-xl"></i></div>
+                <div><i class="fa-regular fa-heart text-xl hover:text-green-600"></i></div>
                 </div>
                 <div class="card-body items-left">
                   <h2 id="" class="card-title text-2xl font-bold">
-                    National Emergency Number
+                    Ambulance Service
                   </h2>
                   <p class="text-gray-500">
-                    <span id="">National Emergency
+                    <span id="">Ambulance
                   </p>
-
-                  <p class="text-2xl font-bold mt-3">999<br>
-                    <span class="text-xs font-normal bg-gray-200 px-4 py-1 rounded-4xl">All</span>    
+                  <p class="text-2xl font-bold mt-3"><span class="call-number">1994-999999</span><br>
+                    <span class="text-xs font-normal bg-gray-200 px-4 py-1 rounded-4xl">Health</span>    
                 </p>
                   <div class="my-3 grid grid-cols-2 gap-1 justify-between items-center">
                   <button
-                    class="btn bg-white text-gray-500 rounded-lg cart-btn"
+                    class="btn bg-white text-gray-500 rounded-lg copy-btn hover:bg-black hover:text-white"
                   >
                    <i class="fa-regular fa-copy"></i> Copy
                   </button>
                   <button
-                    class="btn bg-green-700 text-white rounded-lg cart-btn"
+                    class="btn bg-green-600 hover:bg-green-500 text-white rounded-lg call-btn"
                   >
-                    Add to Cart
+                    <i class="fa-solid fa-phone"></i> Call
                   </button>
                 </div>
                 </div>    
-              </div> 
+              </div>
               <!-- Contact Card 5 -->
-                            <div id="" class="card bg-white shadow-lg">
+                            <div id="" class="card bg-white shadow-sm">
                 <div class="icon-container flex justify-between items-center px-5">
                     <figure class="my-5 p-2 rounded-2xl bg-pink-200">
                   <img
@@ -218,35 +216,34 @@
                     class="rounded-xl w-8"
                   /> 
                 </figure>
-                <div><i class="fa-regular fa-heart text-xl"></i></div>
+                <div><i class="fa-regular fa-heart text-xl hover:text-green-600"></i></div>
                 </div>
                 <div class="card-body items-left">
                   <h2 id="" class="card-title text-2xl font-bold">
-                    National Emergency Number
+                    Women & Child Helpline
                   </h2>
                   <p class="text-gray-500">
-                    <span id="">National Emergency
+                    <span id="">Women & Child Helpline
                   </p>
-
-                  <p class="text-2xl font-bold mt-3">999<br>
-                    <span class="text-xs font-normal bg-gray-200 px-4 py-1 rounded-4xl">All</span>    
+                  <p class="text-2xl font-bold mt-3"><span class="call-number">109</span><br>
+                    <span class="text-xs font-normal bg-gray-200 px-4 py-1 rounded-4xl">Help</span>    
                 </p>
                   <div class="my-3 grid grid-cols-2 gap-1 justify-between items-center">
                   <button
-                    class="btn bg-white text-gray-500 rounded-lg cart-btn"
+                    class="btn bg-white text-gray-500 rounded-lg copy-btn hover:bg-black hover:text-white"
                   >
                    <i class="fa-regular fa-copy"></i> Copy
                   </button>
                   <button
-                    class="btn bg-green-700 text-white rounded-lg cart-btn"
+                    class="btn bg-green-600 hover:bg-green-500 text-white rounded-lg call-btn"
                   >
-                    Add to Cart
+                    <i class="fa-solid fa-phone"></i> Call
                   </button>
                 </div>
                 </div>    
               </div> 
               <!-- Contact Card 6 -->
-                            <div id="" class="card bg-white shadow-lg">
+                            <div id="" class="card bg-white shadow-sm">
                 <div class="icon-container flex justify-between items-center px-5">
                     <figure class="my-5 p-2 rounded-2xl bg-pink-200">
                   <img
@@ -255,148 +252,48 @@
                     class="rounded-xl w-8"
                   /> 
                 </figure>
-                <div><i class="fa-regular fa-heart text-xl"></i></div>
+                <div><i class="fa-regular fa-heart text-xl hover:text-green-600"></i></div>
                 </div>
                 <div class="card-body items-left">
                   <h2 id="" class="card-title text-2xl font-bold">
-                    National Emergency Number
+                    Anti-Corruption Helpline
                   </h2>
                   <p class="text-gray-500">
-                    <span id="">National Emergency
+                    <span id="">Anti-Corruption
                   </p>
-
-                  <p class="text-2xl font-bold mt-3">999<br>
-                    <span class="text-xs font-normal bg-gray-200 px-4 py-1 rounded-4xl">All</span>    
+                  <p class="text-2xl font-bold mt-3"><span class="call-number">106</span><br>
+                    <span class="text-xs font-normal bg-gray-200 px-4 py-1 rounded-4xl">Govt.</span>    
                 </p>
                   <div class="my-3 grid grid-cols-2 gap-1 justify-between items-center">
                   <button
-                    class="btn bg-white text-gray-500 rounded-lg cart-btn"
+                    class="btn bg-white text-gray-500 rounded-lg copy-btn hover:bg-black hover:text-white"
                   >
                    <i class="fa-regular fa-copy"></i> Copy
                   </button>
                   <button
-                    class="btn bg-green-700 text-white rounded-lg cart-btn"
+                    class="btn bg-green-600 hover:bg-green-500 text-white rounded-lg call-btn"
                   >
-                    Add to Cart
-                  </button>
-                </div>
-                </div>    
-              </div> 
-              <!-- Contact Card 7 -->
-                            <div id="" class="card bg-white shadow-lg">
-                <div class="icon-container flex justify-between items-center px-5">
-                    <figure class="my-5 p-2 rounded-2xl bg-pink-200">
-                  <img
-                    src="./assets/emergency.png"
-                    alt="Shoes"
-                    class="rounded-xl w-8"
-                  /> 
-                </figure>
-                <div><i class="fa-regular fa-heart text-xl"></i></div>
-                </div>
-                <div class="card-body items-left">
-                  <h2 id="" class="card-title text-2xl font-bold">
-                    National Emergency Number
-                  </h2>
-                  <p class="text-gray-500">
-                    <span id="">National Emergency
-                  </p>
-
-                  <p class="text-2xl font-bold mt-3">999<br>
-                    <span class="text-xs font-normal bg-gray-200 px-4 py-1 rounded-4xl">All</span>    
-                </p>
-                  <div class="my-3 grid grid-cols-2 gap-1 justify-between items-center">
-                  <button
-                    class="btn bg-white text-gray-500 rounded-lg cart-btn"
-                  >
-                   <i class="fa-regular fa-copy"></i> Copy
-                  </button>
-                  <button
-                    class="btn bg-green-700 text-white rounded-lg cart-btn"
-                  >
-                    Add to Cart
+                    <i class="fa-solid fa-phone"></i> Call
                   </button>
                 </div>
                 </div>    
               </div>       
-              <!-- Contact Card 8 -->
-                            <div id="" class="card bg-white shadow-lg">
-                <div class="icon-container flex justify-between items-center px-5">
-                    <figure class="my-5 p-2 rounded-2xl bg-pink-200">
-                  <img
-                    src="./assets/emergency.png"
-                    alt="Shoes"
-                    class="rounded-xl w-8"
-                  /> 
-                </figure>
-                <div><i class="fa-regular fa-heart text-xl"></i></div>
-                </div>
-                <div class="card-body items-left">
-                  <h2 id="" class="card-title text-2xl font-bold">
-                    National Emergency Number
-                  </h2>
-                  <p class="text-gray-500">
-                    <span id="">National Emergency
-                  </p>
-
-                  <p class="text-2xl font-bold mt-3">999<br>
-                    <span class="text-xs font-normal bg-gray-200 px-4 py-1 rounded-4xl">All</span>    
-                </p>
-                  <div class="my-3 grid grid-cols-2 gap-1 justify-between items-center">
-                  <button
-                    class="btn bg-white text-gray-500 rounded-lg cart-btn"
-                  >
-                   <i class="fa-regular fa-copy"></i> Copy
-                  </button>
-                  <button
-                    class="btn bg-green-700 text-white rounded-lg cart-btn"
-                  >
-                    Add to Cart
-                  </button>
-                </div>
-                </div>    
-              </div>       
-              <!-- Contact Card 9 -->
-                            <div id="" class="card bg-white shadow-lg">
-                <div class="icon-container flex justify-between items-center px-5">
-                    <figure class="my-5 p-2 rounded-2xl bg-pink-200">
-                  <img
-                    src="./assets/emergency.png"
-                    alt="Shoes"
-                    class="rounded-xl w-8"
-                  /> 
-                </figure>
-                <div><i class="fa-regular fa-heart text-xl"></i></div>
-                </div>
-                <div class="card-body items-left">
-                  <h2 id="" class="card-title text-2xl font-bold">
-                    National Emergency Number
-                  </h2>
-                  <p class="text-gray-500">
-                    <span id="">National Emergency
-                  </p>
-
-                  <p class="text-2xl font-bold mt-3">999<br>
-                    <span class="text-xs font-normal bg-gray-200 px-4 py-1 rounded-4xl">All</span>    
-                </p>
-                  <div class="my-3 grid grid-cols-2 gap-1 justify-between items-center">
-                  <button
-                    class="btn bg-white text-gray-500 rounded-lg cart-btn"
-                  >
-                   <i class="fa-regular fa-copy"></i> Copy
-                  </button>
-                  <button
-                    class="btn bg-green-700 text-white rounded-lg cart-btn"
-                  >
-                    Add to Cart
-                  </button>
-                </div>
-                </div>    
-              </div>       
-                        </div>   
+            </div>   
                     </section>
-            <aside id="cart-box" class="col-span-3">
-            </aside>
+                    <!-- History Container -->
+            <aside id="history-box" class="col-span-4 min-[884px]:col-span-3 bg-white row-span-1 shadow-sm rounded-xl">
+          
+          <div class="history-box bg-white p-5 rounded-xl">
+            <div class="flex flex-col gap-5 min-[884px]:flex-row justify-between items-center min-[884px]:text-center mb-5">
+              <h2 class="font-semibold"><i class="fa-regular fa-clock text-gray-400"></i> Call History</h2>
+            <button id="btn-clear" class="btn bg-green-600 hover:bg-green-500 text-white px-7 py-5.5 rounded-full font-semibold">Clear</button>
+            </div>
+            <div class="space-y-5" id="history-container">
+              
+            </div>
+            </div>
+          </div>
+        </aside>
                 </section>
             </section>
          </section>
