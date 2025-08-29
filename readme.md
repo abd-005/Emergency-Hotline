@@ -5,11 +5,15 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 ### 6. Answer the following questions clearly:
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+
 **getElementById** is responsible for fetch ID from HTML Document while **getElementsByClassName** is responsible for fetch all of the same classes and **querySelector** is usually responsible for fetch ID or the first ID available **querySelectorAll** is responsible for fetch classes. querySelector in the way of CSS selector.
+
 2. How do you **create and insert a new element into the DOM**?
+
 **step 1:** create element with **document.createElement()**
 **step 2:** set the content with **innerText**
 **step 1:** insert the new element with **appendChild()**
+
 3. What is **Event Bubbling** and how does it work?
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
